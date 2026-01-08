@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="player"></div>
+
+    <div id="main">
+        <div id="nav" class="sections">
+            <div id="logo">
+                <img class="imgFit" src="images/logo.png" alt="AUDIOBEADTZ">
+            </div>
+            <div id="nav1">
+                <div class="navigationButtons lightGrayFont">
+                    <svg class="navigationIcons" xmlns="http://www.w3.org/2000/svg" height="20px"
+                        viewBox="0 -960 960 960" width="20px" fill="#F3F3F3">
+                        <path
+                            d="M264-216h96v-240h240v240h96v-348L480-726 264-564v348Zm-72 72v-456l288-216 288 216v456H528v-240h-96v240H192Zm288-327Z" />
+                    </svg>Home
+                </div>
+                <div class="navigationButtons lightGrayFont">
+                    <svg class="navigationIcons" xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#F3F3F3">
+                        <path
+                            d="M480-300q75 0 127.5-52.5T660-480q0-75-52.5-127.5T480-660q-75 0-127.5 52.5T300-480q0 75 52.5 127.5T480-300Zm0-140q-17 0-28.5-11.5T440-480q0-17 11.5-28.5T480-520q17 0 28.5 11.5T520-480q0 17-11.5 28.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>Album
+                </div>
+                <div class="navigationButtons lightGrayFont">
+                    <svg class="navigationIcons" xmlns="http://www.w3.org/2000/svg" height="20px"
+                        viewBox="0 -960 960 960" width="20px" fill="#F3F3F3">
+                        <path
+                            d="M408-144q-60 0-102-42t-42-102q0-60 42-102t102-42q20 0 38 5.5t34 14.5v-404h216v144H552v384q0 60-42 102t-102 42Z" />
+                    </svg>Songs
+                </div>
+            </div>
+            <div class="navSeparatorLine"></div>
+            <div id="nav2">
+                <div class="navigationHeadings lightGrayFont">DISCOVERY</div>
+                <div class="navigationButtons lightGrayFont">
+                    <svg class="navigationIcons" xmlns="http://www.w3.org/2000/svg" height="20px"
+                        viewBox="0 -960 960 960" width="20px" fill="#F3F3F3">
+                        <path
+                            d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z" />
+                    </svg>Trending
+                </div>
+                <div class="navigationButtons lightGrayFont">
+                    <svg class="navigationIcons" xmlns="http://www.w3.org/2000/svg" height="20px"
+                        viewBox="0 -960 960 960" width="20px" fill="#F3F3F3">
+                        <path
+                            d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z" />
+                    </svg>Popular
+                </div>
+                <div class="navigationButtons lightGrayFont">
+                    <svg class="navigationIcons" xmlns="http://www.w3.org/2000/svg" height="20px"
+                        viewBox="0 -960 960 960" width="20px" fill="#F3F3F3">
+                        <path
+                            d="M720-552h120v72h-72v192q0 40.32-27.77 68.16-27.78 27.84-68 27.84Q632-192 604-219.77q-28-27.78-28-68Q576-328 603.84-356q27.84-28 68.16-28 13 0 25 4t23 9v-181ZM144-192v-92q0-26 12.5-47.5T191-366q55-32 116-49t125-17q32.19 0 64 4.5 31.81 4.5 64 13.5-14 14-24.91 29.43Q524.18-369.15 516-351q-20-5-41.5-7t-42.5-2q-53.93 0-105.96 14Q274-332 227-304q-4.95 2.94-7.98 8.24Q216-290.47 216-284v20h290q2 20 9 37.5t18 34.5H144Zm288-288q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 60-42 102t-102 42Zm.21-72Q462-552 483-573.21t21-51Q504-654 482.79-675t-51-21Q402-696 381-674.79t-21 51Q360-594 381.21-573t51 21Zm-.21-72Zm0 360Z" />
+                    </svg>Singer
+                </div>
+                <div class="navigationButtons lightGrayFont">
+                    <svg class="navigationIcons" xmlns="http://www.w3.org/2000/svg" height="20px"
+                        viewBox="0 -960 960 960" width="20px" fill="#F3F3F3">
+                        <path
+                            d="m760-353-46-57q37-31 57.5-73.82 20.5-42.83 20.5-91Q792-623 771.5-666 751-709 714-740l46-56q49 42 76.5 99.28T864-575q0 64-28 122t-76 100Zm-92-112-46-55q13-10 19.5-24.5T648-575q0-16-6.5-30T622-629l46-56q25 20 38.5 49t13.5 61q0 32-13.5 61T668-465Zm-284 33q-60 0-102-41.5t-42-101.37q0-59.86 42-102.5Q324-720 384-720t102 42.63q42 42.64 42 102.5 0 59.87-42 101.37Q444-432 384-432ZM96-144v-97q0-24 13-44t34-33q55-33 116-50t125-17q64 0 125 17t116 50q20 13 33.5 33t13.5 44v97H96Zm72-72h432v-25q0-4.55-3-8.28-3-3.72-8-6.72-47-29-99-43t-106-14q-54 0-106 14t-99 43q-5 3-8 6.72-3 3.73-3 8.28v25Zm216.21-288Q414-504 435-524.5t21-50.58q0-30.08-21.21-51.5t-51-21.42Q354-648 333-626.58t-21 51.5q0 30.08 21.21 50.58t51 20.5Zm-.21-71Zm0 359Z" />
+                    </svg>Band
+                </div>
+                <div class="navigationButtons lightGrayFont">
+                    <svg class="navigationIcons" xmlns="http://www.w3.org/2000/svg" height="20px"
+                        viewBox="0 -960 960 960" width="20px" fill="#F3F3F3">
+                        <path
+                            d="M168-96q-29.7 0-50.85-21.17Q96-138.34 96-168.07v-432.41q0-22.52 13.5-41.02Q123-660 144-668l539-196 25 68-342 124h425.96Q822-672 843-650.84t21 50.88v432.24Q864-138 842.85-117T792-96H168Zm0-72h624v-264H168v264Zm143.77-48Q352-216 380-243.77q28-27.78 28-68Q408-352 380.23-380q-27.78-28-68-28Q272-408 244-380.23q-28 27.78-28 68Q216-272 243.77-244q27.78 28 68 28ZM168-504h480v-72h72v72h72v-96H168v96Zm0 336v-264 264Z" />
+                    </svg>Radio
+                </div>
+                <div class="navigationButtons lightGrayFont">
+                    <svg class="navigationIcons" xmlns="http://www.w3.org/2000/svg" height="20px"
+                        viewBox="0 -960 960 960" width="20px" fill="#F3F3F3">
+                        <path
+                            d="M444-96v-322q-17-9-26.5-25.5T408-480q0-30 21-51t51-21q30 0 51 21t21 51q0 20-9.5 36.5T516-418v322h-72ZM208-208q-52-53-82-122.5T96-480q0-80 30-149.5t82.5-122Q261-804 331-834t149-30q80 0 149.5 30t122 82.5Q804-699 834-629.5T864-480q0 80-30 149.5T751-209l-51-51q43-42 67.5-98.5T792-480q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 65 24.5 121.5T259-259l-51 51Zm102-102q-32-33-51-76.5T240-480q0-100 70-170t170-70q100 0 170 70t70 170q0 50-19 93.5T649-311l-50-50q23-23 36-53.5t13-65.5q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 35 13 65.5t36 53.5l-51 51Z" />
+                    </svg>Podcast
+                </div>
+            </div>
+            <div class="navSeparatorLine"></div>
+        </div>
+        <div id="content" class="sections">
+            <div id="middle">
+                <div id="albumsMain" class="">
+                    <div id="header">
+                        <b class="whiteFont">Welcome Back!</b>
+                        <p class="grayFont">
+                            What do you feel like today?
+                        </p>
+                    </div>
+                    <input id="searchBox" type="search" placeholder="🔍︎ Search for songs...">
+                    <div id="albumsArea">
+                        <div class="albumHeadings whiteFont madeForYou">Made for you</div>
+                        <div class="albumContainers madeForYou" style="margin-bottom: 10px;">
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                        </div>
+                        <div class="albumHeadings whiteFont yourFavourites">Your favourites</div>
+                        <div class="albumContainers yourFavourites">
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                        </div>
+                        <div class="albumHeadings whiteFont recommendations">Recommendations</div>
+                        <div class="albumContainers recommendations" style="margin-bottom: 10px;">
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                            <div class="albums">
+                                <div class="albumThumbnails"></div>
+                                <div class="albumContent lightGrayFont">Karan Aujla, Shubh</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <div id="controlLeft">
+                        <div class="songsControl">
+                            <div class="songThumbnailControl">
+                                <img class="songThumbnailImageControl" src="images/song.png" alt="">
+                            </div>
+                            <div class="songContentControl">
+                                <div class="songNameControl whiteFont">On The Floor</div>
+                                <div class="songArtistControl lightGrayFont">Jennifer Lopez,Pitbull</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controlMiddle">
+                        <div id="middleControls">
+                            <div class="controlButtons"><img class="controlIcons changeSongControl"
+                                    src="images/previous.png" alt=""></div>
+                            <div class="controlButtons"><img class="controlIcons  pauseSong" src="images/pause.png"
+                                    alt=""></div>
+                            <div class="controlButtons"><img class="controlIcons changeSongControl"
+                                    src="images/next.png" alt=""></div>
+                        </div>
+                        <div id="seekBar"></div>
+                    </div>
+                    <div id="controlRight">
+                        <svg id="downloadIcon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                            width="20px" fill="#F3F3F3">
+                            <path
+                                d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z" />
+                        </svg>
+                        <div id="volume">
+                            <svg id="volumeIcon" xmlns="http://www.w3.org/2000/svg" height="20px"
+                                viewBox="0 -960 960 960" width="20px" fill="#F3F3F3">
+                                <path
+                                    d="M552-152v-75q86-23 139-93.26 53-70.25 53-159.5 0-89.24-53.5-158.74Q637-708 552-734v-75q116 25 190 117t74 211q0 119-73.5 211.5T552-152ZM144-385v-192h144l192-192v576L288-385H144Zm408 55v-302q45.12 20.4 70.56 61.2Q648-530 648-480.52q0 48.52-25.44 89.23Q597.12-350.59 552-330ZM408-595l-90 90H216v48h102l90 90v-228Zm-91 113Z" />
+                            </svg>
+                            <div id="volumeSeekBar"></div>
+                        </div>
+                        <svg id="fullScreen" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                            width="20px" fill="#F3F3F3">
+                            <path
+                                d="M144-144v-192h72v120h120v72H144Zm480 0v-72h120v-120h72v192H624ZM144-624v-192h192v72H216v120h-72Zm600 0v-120H624v-72h192v192h-72Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div id="songsDiv" class="">
+                <div class="songs" data-video-id="kJQP7kiw5Fk">
+                    <div class="songThumbnail">
+                        <img class="songThumbnailImage" src="images/song.png" alt="">
+                    </div>
+                    <div class="songContent">
+                        <div class="songName whiteFont">On The Floor</div>
+                        <div class="songArtist grayFont">Jennifer Lopez,Pitbull</div>
+                    </div>
+                </div>
+                <div class="songs" data-video-id="kJQP7kiw5Fk">
+                    <div class="songThumbnail">
+                        <img class="songThumbnailImage" src="images/song.png" alt="">
+                    </div>
+                    <div class="songContent">
+                        <div class="songName whiteFont">On The Floor</div>
+                        <div class="songArtist grayFont">Jennifer Lopez,Pitbull</div>
+                    </div>
+                </div>
+                <div class="songs" data-video-id="kJQP7kiw5Fk">
+                    <div class="songThumbnail">
+                        <img class="songThumbnailImage" src="images/song.png" alt="">
+                    </div>
+                    <div class="songContent">
+                        <div class="songName whiteFont">On The Floor</div>
+                        <div class="songArtist grayFont">Jennifer Lopez,Pitbull</div>
+                    </div>
+                </div>
+                <div class="songs" data-video-id="kJQP7kiw5Fk">
+                    <div class="songThumbnail">
+                        <img class="songThumbnailImage" src="images/song.png" alt="">
+                    </div>
+                    <div class="songContent">
+                        <div class="songName whiteFont">On The Floor</div>
+                        <div class="songArtist grayFont">Jennifer Lopez,Pitbull</div>
+                    </div>
+                </div>
+                <div class="songs" data-video-id="kJQP7kiw5Fk">
+                    <div class="songThumbnail">
+                        <img class="songThumbnailImage" src="images/song.png" alt="">
+                    </div>
+                    <div class="songContent">
+                        <div class="songName whiteFont">On The Floor</div>
+                        <div class="songArtist grayFont">Jennifer Lopez,Pitbull</div>
+                    </div>
+                </div>
+                <div class="songs" data-video-id="kJQP7kiw5Fk">
+                    <div class="songThumbnail">
+                        <img class="songThumbnailImage" src="images/song.png" alt="">
+                    </div>
+                    <div class="songContent">
+                        <div class="songName whiteFont">On The Floor</div>
+                        <div class="songArtist grayFont">Jennifer Lopez,Pitbull</div>
+                    </div>
+                </div>
+                <div class="songs" data-video-id="kJQP7kiw5Fk">
+                    <div class="songThumbnail">
+                        <img class="songThumbnailImage" src="images/song.png" alt="">
+                    </div>
+                    <div class="songContent">
+                        <div class="songName whiteFont">On The Floor</div>
+                        <div class="songArtist grayFont">Jennifer Lopez,Pitbull</div>
+                    </div>
+                </div>
+                <div class="songs" data-video-id="kJQP7kiw5Fk">
+                    <div class="songThumbnail">
+                        <img class="songThumbnailImage" src="images/song.png" alt="">
+                    </div>
+                    <div class="songContent">
+                        <div class="songName whiteFont">On The Floor</div>
+                        <div class="songArtist grayFont">Jennifer Lopez,Pitbull</div>
+                    </div>
+                </div>
+                <div class="songs" data-video-id="kJQP7kiw5Fk">
+                    <div class="songThumbnail">
+                        <img class="songThumbnailImage" src="images/song.png" alt="">
+                    </div>
+                    <div class="songContent">
+                        <div class="songName whiteFont">On The Floor</div>
+                        <div class="songArtist grayFont">Jennifer Lopez,Pitbull</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
